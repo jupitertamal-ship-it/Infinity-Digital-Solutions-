@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Infinity Digital Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Name Entry Screen -->
+<div id="nameScreen" class="center">
+  <h1>Infinity Digital Solutions</h1>
+  <p>Enter your name please</p>
+  <input type="text" id="userName" placeholder="Your name">
+  <button onclick="startChat()">Enter</button>
+</div>
+
+<!-- Chat Screen -->
+<div id="chatScreen" class="hidden">
+  <div class="robot">
+    🤖
+    <div class="bubble" id="botMessage">Hello!</div>
+  </div>
+
+  <div class="chatBox" id="chatBox"></div>
+
+  <div class="inputArea">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
